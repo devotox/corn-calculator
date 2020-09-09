@@ -1,0 +1,33 @@
+{{! Needed for Ember CLI Head !}}
+<HeadLayout />
+
+{{! Page Progress !}}
+<PageProgress />
+
+{{! Notification Popup !}}
+<NotificationContainer @position="top-right" />
+
+{{! New Version Alert !}}
+<ServiceWorkerUpdateNotify>
+	<a href={{this.router.currentURL}} class={{concat
+		"service-worker-update-notify "
+		"layout-row layout-align-center-center text-red-700 "
+		(if (or this.media.isSmall this.media.isMobile) "text-xl" "text-2xl")
+	}}>
+		A new version is available, click here to update!
+	</a>
+</ServiceWorkerUpdateNotify>
+
+{{! Loading Mask !}}
+<WhileLoading>
+	<div class="flex justify-center items-center fixed inset-0 h-screen bg-black opacity-75 transition-opacity" style="transform: scale(4,4)">
+		<LoaderLineScalePulseOutRapid />
+	</div>
+</WhileLoading>
+
+{{! Page & Navigation !}}
+{{!-- <AppShell {{did-insert (fn (route-action "afterRender"))}}>
+	{{outlet}}
+</AppShell> --}}
+
+{{outlet}}

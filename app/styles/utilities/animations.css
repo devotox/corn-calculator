@@ -1,0 +1,61 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: rotate(-13deg) translateY(0)
+    }
+
+    to {
+        transform: rotate(-13deg) translateY(-599px)
+    }
+}
+
+.spin {
+    animation: spin .5s linear infinite
+}
+
+.pulse {
+    animation: pulse 2s ease infinite
+}
+
+.scroll {
+    animation: scroll 15s linear infinite;
+}
+
+@media (min-width: 1280px) {
+    @keyframes scroll-lg {
+        0% {
+            transform: rotate(-13deg) translateY(0)
+        }
+
+        to {
+            transform: rotate(-13deg) translateY(-1918px)
+        }
+    }
+
+    .scroll {
+        animation: scroll-lg 30s linear infinite;
+    }
+}

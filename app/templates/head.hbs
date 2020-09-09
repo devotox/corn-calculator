@@ -1,0 +1,30 @@
+<title>
+	{{this.model.title}}
+</title>
+
+{{! template-lint-disable }}
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content={{this.model.description}}>
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, minimal-ui">
+
+<meta property="og:type" content="website">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta property="og:image:type" content="image/png">
+
+<meta property="og:title" content={{this.model.title}}>
+<meta property="og:url" content={{this.model.socialURL}}>
+<meta property="og:site_name" content={{this.model.siteName}}>
+<meta property="og:image" content={{this.model.socialImageLogo}}>
+<meta property="og:description" content={{this.model.description}}>
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content={{this.model.title}}>
+<meta name="twitter:site" content={{this.model.siteName}}>
+<meta name="twitter:creator" content={{this.model.twitter}}>
+<meta name="twitter:description" content={{this.model.description}}>
+<meta name="twitter:image:src" content={{this.model.socialImageLogo}}>
+{{! template-lint-enable }}

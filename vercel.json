@@ -1,0 +1,47 @@
+{
+	"version": 2,
+	"public": false,
+	"cleanUrls": true,
+	"trailingSlash": false,
+	"scope": "dtox-consulting",
+	"github": {
+		"silent": false,
+		"enabled": false,
+		"autoAlias": true,
+		"autoJobCancelation": true
+	},
+	"env": {
+	},
+	"builds": [
+		{
+			"src": "package.json",
+			"use": "@vercel/static-build"
+		}
+	],
+	"routes": [
+		{
+			"src": "/?(.*)",
+			"continue": true,
+			"headers": {
+				"Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/?(.*)",
+			"dest": "/_empty.html",
+			"headers": {
+				"Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate"
+			}
+		},
+		{
+			"src": "/?(.*)",
+			"dest": "/index.html",
+			"headers": {
+				"Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate"
+			}
+		}
+	]
+}
