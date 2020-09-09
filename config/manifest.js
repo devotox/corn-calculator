@@ -36,20 +36,20 @@ module.exports = function() {
 		icons,
 		dir: 'ltr',
 		scope: '/',
-		name: 'CornCalc',
+		name: 'Corn Calculator',
 		'short_name': 'CornCalc',
 		display: 'standalone',
 		'theme_color': themeColor,
 		orientation: 'portrait',
 		'background_color': '#FFFFFF',
 		'gcm_sender_id': '103953800507',
-		description: 'Beauty At Your Service',
+		description: 'Corn Calculation',
 		'start_url': '/?utm_source=web_app_manifest',
 		author: {
 			'name': 'Devonte Emokpae',
-			'website': 'https://CornCalc.io',
-			'github': 'https://github.com/DTOX-Consulting',
-			'source-repo': 'https://github.com/DTOX-Consulting/corn-calculator'
+			'website': 'https://corn-calculator.vercel.app',
+			'github': 'https://github.com/devotox',
+			'source-repo': 'https://github.com/devotox/corn-calculator'
 		},
 		apple: {
 			precomposed: false,

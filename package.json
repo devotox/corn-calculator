@@ -5,8 +5,8 @@
   "main": "index.js",
   "version": "1.0.0",
   "description": "Ember Frontend for CornCalc",
-  "repository": "https://github.com/DTOX-Consulting/corn-calculator",
-  "author": "",
+  "repository": "https://github.com/devotox/corn-calculator",
+  "author": "Devonte Emokpae",
   "directories": {
     "doc": "doc",
     "test": "tests"
