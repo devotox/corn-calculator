@@ -12,7 +12,7 @@ export default class Index extends Controller {
 
 	@action
 	calculate() {
-		const calculation = calculate(this.cost, this.bags);
+		const calculation = calculate(this.bags);
 		this.notifications.success(`Answer: ${calculation}`, {
 			clearDuration: 3000,
 			autoClear: true

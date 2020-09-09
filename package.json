@@ -1,12 +1,12 @@
 {
   "private": true,
   "license": "MIT",
-  "name": "corn-calculator",
   "main": "index.js",
   "version": "1.0.0",
+  "name": "corn-calculator",
+  "author": "Devonte Emokpae",
   "description": "Ember Frontend for CornCalc",
   "repository": "https://github.com/devotox/corn-calculator",
-  "author": "Devonte Emokpae",
   "directories": {
     "doc": "doc",
     "test": "tests"
