@@ -17,7 +17,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "npm-run-all lint:* test:*",
+    "test": "jest",
     "test:ember": "ember test",
     "postinstall": "yarn-deduplicate -s fewer yarn.lock",
     "deploy:vercel": "vercel deploy --debug"
@@ -29,6 +29,7 @@
     "@tailwindcss/custom-forms": "0.2.1",
     "@tailwindcss/typography": "0.2.0",
     "@tailwindcss/ui": "0.6.0",
+    "jest": "^26.4.2",
     "node-fetch": "2.6.1",
     "tailwindcss": "1.8.5",
     "yarn-deduplicate": "3.0.0"

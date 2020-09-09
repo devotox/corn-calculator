@@ -2,6 +2,7 @@ import { action } from '@ember/object';
 import Controller from '@ember/controller';
 import { tracked } from '@glimmer/tracking';
 import { inject as service } from '@ember/service';
+import calculate from '../helpers/calculate'
 
 export default class Index extends Controller {
 	@service notifications: any;
@@ -19,11 +20,6 @@ export default class Index extends Controller {
 
 		return calculation;
 	}
-}
-
-export function calculate(cost: any, bags: any): number {
-	const calculation = Number(cost) * Number(bags);
-	return calculation;
 }
 
 // DO NOT DELETE: this is how TypeScript knows how to look up your controllers.
